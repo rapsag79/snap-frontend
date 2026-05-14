@@ -1,0 +1,195 @@
+.list {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 130px 1fr 90px 110px 110px;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 130px 1fr 90px 110px 110px;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: #fafafa;
+}
+
+.codeCell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6366f1;
+  background: #eef2ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.copyBtn {
+  font-size: 0.75rem;
+  color: #6b7280;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.copyBtn:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+.urlCell {
+  overflow: hidden;
+}
+
+.originalUrl {
+  font-size: 0.875rem;
+  color: #374151;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.originalUrl:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+.clicksCell {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.clicksBadge {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.clicksLabel {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.dateCell {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.actionsCell {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deleteBtn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #9ca3af;
+  background: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.deleteBtn:hover {
+  border-color: #fca5a5;
+  color: #ef4444;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.deleteBtnConfirm {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: #fef2f2;
+}
+
+.empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.emptyIcon {
+  display: block;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Indicadores de antigüedad — el backend no tiene expiración real */
+.badgeNew {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #059669;
+  background: #d1fae5;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+.badgeOld {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #9ca3af;
+  background: #f3f4f6;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+.rowOld {
+  opacity: 0.65;
+}
+
+.rowOld:hover {
+  opacity: 1;
+}
+
+.codeOld {
+  color: #9ca3af;
+  background: #f3f4f6;
+}
