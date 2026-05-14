@@ -30,8 +30,8 @@ export function ClicksChart({ data }: Props) {
         />
         <YAxis allowDecimals={false} tick={{ fontSize: 11, fill: '#9ca3af' }} />
         <Tooltip
-          formatter={(value: number) => [value, 'Clicks']}
-          labelFormatter={(label: string) => `Día: ${label}`}
+          formatter={(value) => [value ?? 0, 'Clicks']}
+          labelFormatter={(label) => `Día: ${label}`}
           contentStyle={{ borderRadius: '8px', border: '1px solid #e5e7eb', fontSize: '0.8rem' }}
         />
         <Bar dataKey="clicks" fill="#6366f1" radius={[4, 4, 0, 0]} maxBarSize={32} />

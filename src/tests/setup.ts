@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom'
 
 // Recharts usa ResizeObserver y matchMedia que no existen en jsdom
-global.ResizeObserver = class ResizeObserver {
+window.ResizeObserver = class ResizeObserver {
   observe() {}
   unobserve() {}
   disconnect() {}
